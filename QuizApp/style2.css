@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(90deg, #87CEEB, #94d2bd);
+}
+
+.quiz-title {
+    display: flex;
+    align-items: center; /* Aligns logo and text vertically */
+    justify-content: center; /* Centers the title horizontally */
+    font-size: 2rem; /* Adjusts the title font size */
+    margin-top: 20px; /* Adds spacing above the title */
+    gap: 10px; /* Space between the logo and the title */
+    text-align:left;
+    margin-right: 2rem;
+    font-weight: 600;
+    border-bottom: #001e4d;
+    color: #001e4d; /* Gives a distinct color to the title */
+}
+
+.logo {
+    width: 40px; /* Sets the logo to a small, consistent size */
+    height: 40px;
+    object-fit: contain;
+}
+
+  
+.app {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 20px;
+}
+.app h1{
+    font-size: 25px;
+    font-weight: 300;
+
+    
+    color:#001e4d ;
+    border-bottom: 1px solid #333 ;
+    padding-bottom: 20px;
+}
+
+.quiz{
+    padding:20px 0;
+}
+.quiz h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #001e4d;
+}
+.home-icon {
+    font-size: 24px;
+    color: white;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.home-icon:hover {
+    background-color: #0056b3;
+}
+
+.quiz {
+    margin-top: 20px;
+}
+
+#answer-buttons {
+    margin: 20px 0;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn:hover:not([disabled]){
+    background: #222;
+    color: #fff;
+
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-btn {
+    color: #fff;
+    padding: 10px;
+    font-weight: 500;
+    border: 1px solid #222;
+    width: 150px;
+    margin: 20px auto 0;
+    background: #001e4d;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+.correct {
+  background: #9aeabc;
+}
+.incorrect {
+    background: #ff9393;
+}
+#main {
+    font-size: 16px;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for the new button specifically if you want to highlight it */
+#main:nth-child(4) {
+    background-color: #2ecc71; /* Green button for 'Go to Main Page' */
+}
+
+#main:nth-child(4):hover {
+    background-color: #27ae60; /* Darker green on hover */
+}

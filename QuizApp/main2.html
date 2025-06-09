@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #6a0dad;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background-color: white;
+      color: black;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 600px;
+    }
+
+    h1 {
+      margin-bottom: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 img {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 5px 0;
+      text-align: left;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .button-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f9f9f9;
+      padding: 8px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .button-group:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .button-group p {
+      flex-grow: 1;
+      margin-left: 20px;
+      color: #555;
+      text-align: left;
+    }
+
+    .button-group button {
+      flex-shrink: 0;
+    }
+  h1 img {
+  width: 50px;  /* Adjust the size */
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  border-radius: 1rem; /* Ensure the height is the same as the width */
+  margin-right: 15px;  /* Space between logo and text */  /* Ensures the image fits properly in the circular shape */
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <!-- Insert the logo for the Quiz Hub title -->
+      <img src="https://codeforgeek.com/wp-content/uploads/2021/11/the-closing-tag.jpeg" alt="WebDev Logo">
+
+      Welcome to WebQuizMaster
+    </h1>
+    <p>Select a topic to start the quiz:</p>
+    <div class="button-container">
+      <div class="button-group">
+        <button onclick="location.href='index.html'">JavaScript Quiz</button>
+        <p>Test your knowledge of JavaScript, including syntax, functions, and DOM manipulation.</p>
+      </div>
+      <div class="button-group">
+        <button onclick="location.href='index2.html'">HTML Quiz</button>
+        <p>Assess your understanding of HTML structure, tags, and attributes.</p>
+      </div>
+      <div class="button-group">
+        <button onclick="location.href='index3.html'">CSS Quiz</button>
+        <p>Evaluate your skills in CSS styling, layouts, and animations.</p>
+      </div>
+      <div class="button-group">
+        <button onclick="startQuiz('webdev')">Web Development Quiz</button>
+        <p>A comprehensive quiz covering HTML, CSS, and JavaScript concepts.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    function startQuiz(topic) {
+      alert(`Starting the ${topic} quiz!`);
+      location.href = 'index4.html';
+    }
+  </script>
+</body>
+</html>

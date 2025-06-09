@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getters and Setters in JS</title>
+  </head>
+  <body></body>
+  <script>
+    class User {
+      constructor(email, password) {
+        this.email = email;
+        this.password = password;
+      }
+
+      get email() {
+        return this._email.toUpperCase();
+      }
+      set email(value) {
+        this._email = value;
+      }
+
+      get password() {
+        return `${this._password}pranav`;
+      }
+
+      set password(value) {
+        this._password = value;
+      }
+    }
+
+    const pranav = new User("pranav18.ai", "abc");
+    console.log(pranav.email);
+    console.log(pranav.password);
+  </script>
+</html>
